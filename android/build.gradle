@@ -3,9 +3,13 @@ apply plugin: 'io.fabric'
 
 configurations { natives }
 
-def keystorePropertiesFile = rootProject.file("../ski-jumping-private/key/keystore.properties")
+def isKey = false
+def keystorePropertiesFile = rootProject.file("../pure-ski-jumping-private/key/keystore.properties")
 def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+    isKey = true
+}
 
 android {
     buildToolsVersion "28.0.3"
@@ -25,12 +29,15 @@ android {
     packagingOptions {
         exclude 'META-INF/robovm/ios/robovm.xml'
     }
-    signingConfigs {
-        key {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
+
+    if (isKey) {
+        signingConfigs {
+            key {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            }
         }
     }
 
@@ -45,7 +52,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.key
+            if (isKey) {
+                signingConfig signingConfigs.key
+            }
         }
         debug {
         }
