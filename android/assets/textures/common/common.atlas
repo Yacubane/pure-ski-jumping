@@ -1,0 +1,41 @@
+
+common.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gate
+  rotate: false
+  xy: 2, 98
+  size: 350, 313
+  orig: 350, 313
+  offset: 0, 0
+  index: -1
+jumperIcon
+  rotate: false
+  xy: 2, 2
+  size: 102, 94
+  orig: 102, 94
+  offset: 0, 0
+  index: -1
+pause_button
+  rotate: false
+  xy: 354, 225
+  size: 67, 84
+  orig: 67, 84
+  offset: 0, 0
+  index: -1
+wind
+  rotate: false
+  xy: 354, 311
+  size: 509, 100
+  orig: 509, 100
+  offset: 0, 0
+  index: -1
+windMask
+  rotate: false
+  xy: 865, 323
+  size: 50, 88
+  orig: 50, 88
+  offset: 0, 0
+  index: -1

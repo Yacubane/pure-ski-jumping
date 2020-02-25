@@ -1,0 +1,89 @@
+{
+  "background": {
+    "sky": [
+      { "color": "#10161EFF", "heightPercentage": 1.0 },
+      { "color": "#2F3D50FF", "heightPercentage": 0.0 },
+      { "color": "#2F3D50FF", "heightPercentage": -1.0 }
+    ],
+    "objects":[]
+  },
+  "foreground":{
+    "objects":[]
+  },
+  "shadings": {
+    "background1shading": {
+      "ambientColor": "#000000FF",
+      "fog": {
+        "enabled": true,
+        "centerColor": "#1D2A36FF",
+        "centerStrength": 1.0,
+        "outsideColor": "#1D2A36FF",
+        "outsideStrength": 1.0
+      }
+    },
+    "background2shading": {
+      "ambientColor": "#000000FF",
+      "fog": {
+        "enabled": true,
+        "centerColor": "#1C2935FF",
+        "centerStrength": 0.75,
+        "outsideColor": "#1C2935FF",
+        "outsideStrength": 0.75
+      }
+    },
+    "background3shading": {
+      "ambientColor": "#061F2BFF",
+      "fog": {
+        "enabled": true,
+        "centerColor": "#6b4a3eff",
+        "centerStrength": 0,
+        "outsideColor": "#6b4a3eff",
+        "outsideStrength": 0
+      }
+    },
+    "background4shading": {
+      "ambientColor": "#393F42FF",
+      "fog": {
+        "enabled": false,
+        "centerColor": "#000000",
+        "centerStrength": 1.0,
+        "outsideColor": "#000000",
+        "outsideStrength": 1.0
+      }
+    },
+    "background5shading": {
+      "ambientColor": "#4B5157FF",
+      "fog": {
+        "enabled": false,
+        "centerColor": "#dee7eaff",
+        "centerStrength": 1.0,
+        "outsideColor": "#dee7eaff",
+        "outsideStrength": 1.0
+      }
+    },
+    "hillShading": {
+      "ambientColor": "#888895ff",
+      "fog": {
+        "enabled": false,
+        "centerColor": "#dee7eaff",
+        "centerStrength": 1.0,
+        "outsideColor": "#dee7eaff",
+        "outsideStrength": 1.0
+      }
+    }
+  },
+  "skiJumperShading": "hillShading",
+  "hillBodyOverlayShading": "hillShading",
+  "effectShadings": {
+    "snowParticlesShading": "hillShading"
+  },
+  "layerShadings": {
+    "background1": "background1shading",
+    "background2": "background2shading",
+    "background3": "background3shading",
+    "background4": "background4shading",
+    "background5": "background5shading",
+    "hillbody": "hillShading",
+    "hillbackground": "hillShading"
+  }
+}

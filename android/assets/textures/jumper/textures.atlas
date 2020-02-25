@@ -1,0 +1,69 @@
+
+textures.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+boot
+  rotate: false
+  xy: 2, 92
+  size: 393, 140
+  orig: 393, 140
+  offset: 0, 0
+  index: -1
+boot_stripes
+  rotate: false
+  xy: 774, 116
+  size: 197, 116
+  orig: 197, 116
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 774, 18
+  size: 214, 96
+  orig: 214, 96
+  offset: 0, 0
+  index: -1
+glove
+  rotate: false
+  xy: 618, 17
+  size: 154, 215
+  orig: 154, 215
+  offset: 0, 0
+  index: -1
+goggle
+  rotate: false
+  xy: 235, 16
+  size: 24, 74
+  orig: 24, 74
+  offset: 0, 0
+  index: -1
+google_band
+  rotate: false
+  xy: 2, 2
+  size: 231, 88
+  orig: 231, 88
+  offset: 0, 0
+  index: -1
+helmet
+  rotate: false
+  xy: 397, 3
+  size: 219, 229
+  orig: 219, 229
+  offset: 0, 0
+  index: -1
+helmet_band
+  rotate: false
+  xy: 973, 192
+  size: 44, 40
+  orig: 44, 40
+  offset: 0, 0
+  index: -1
+white_dot
+  rotate: false
+  xy: 618, 5
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1

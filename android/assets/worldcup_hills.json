@@ -1,0 +1,13 @@
+{
+  "hills" : [ {
+    "hillLocation" : {
+      "path" : "zakopane_hs140v1",
+      "internal" : true
+    },
+    "mode" : "MORNING",
+    "snowing" : "SOFT",
+    "gate" : 21,
+    "minWind" : -2.0,
+    "maxWind" : 2.0
+  } ]
+}

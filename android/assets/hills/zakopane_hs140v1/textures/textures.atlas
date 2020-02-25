@@ -1,0 +1,48 @@
+
+textures.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light_flare
+  rotate: false
+  xy: 2, 238
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+start-gate-bg
+  rotate: false
+  xy: 2, 2
+  size: 105, 234
+  orig: 105, 234
+  offset: 0, 0
+  index: -1
+start-gate-fg
+  rotate: false
+  xy: 198, 61
+  size: 81, 175
+  orig: 81, 175
+  offset: 0, 0
+  index: -1
+tree1
+  rotate: false
+  xy: 367, 286
+  size: 106, 208
+  orig: 106, 208
+  offset: 0, 0
+  index: -1
+tree2
+  rotate: false
+  xy: 260, 267
+  size: 105, 227
+  orig: 105, 227
+  offset: 0, 0
+  index: -1
+tree3
+  rotate: false
+  xy: 109, 3
+  size: 87, 233
+  orig: 87, 233
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,91 @@
+{
+  "background": {
+    "sky": [
+      { "color": "#92c8f0ff", "heightPercentage": 1.0 },
+      { "color": "#92c8f0ff", "heightPercentage": 0.0 },
+      { "color": "#6e9ec2ff", "heightPercentage": -1.0}
+    ],
+    "objects":[
+    {
+        "type": "radial-gradient",
+        "x":0.7,
+        "y":0.7,
+        "radius": 0.53,
+        "colors":[
+            { "color": "#3a607cff", "percentage": 0.0 },
+            { "color": "#00000000", "percentage": 1.0 }
+        ],
+        "blending": "ADDITIVE",
+        "ambientColor": "#FFFFFFFF"
+    }]
+  },
+  "foreground": {
+    "objects":[]
+  },
+  "shadings": {
+    "background1shading": {
+      "ambientColor": "#38211eff",
+      "fog": {
+        "enabled": true,
+        "centerColor": "#92c8f0ff",
+        "centerStrength": 1.0,
+        "outsideColor": "#92c8f0ff",
+        "outsideStrength": 1.0
+      }
+    },
+    "background2shading": {
+      "ambientColor": "#38211eff",
+      "fog": {
+        "enabled": true,
+        "centerColor": "#c8e3f7ff",
+        "centerStrength": 1.0,
+        "outsideColor": "#b3d8f3ff",
+        "outsideStrength": 1.0
+      }
+    },
+    "background3shading": {
+      "ambientColor": "#d4e4ecff",
+      "fog": {
+        "enabled": true,
+        "centerColor": "#d4e4ecff",
+        "centerStrength": 0.5,
+        "outsideColor": "#82b6deff",
+        "outsideStrength": 0.5
+      }
+    },
+    "background4shading": {
+      "ambientColor": "#dfeaefff",
+      "fog": {
+        "enabled": false,
+        "centerColor": "#000000",
+        "centerStrength": 1.0,
+        "outsideColor": "#000000",
+        "outsideStrength": 1.0
+      }
+    },
+    "background5shading": {
+      "ambientColor": "#dee7eaff",
+      "fog": {
+        "enabled": false,
+        "centerColor": "#dee7eaff",
+        "centerStrength": 1.0,
+        "outsideColor": "#dee7eaff",
+        "outsideStrength": 1.0
+      }
+    }
+  },
+  "skiJumperShading": "background5shading",
+  "hillBodyOverlayShading": "background5shading",
+  "effectShadings": {
+    "snowParticlesShading": "background5shading"
+  },
+  "layerShadings": {
+    "background1": "background1shading",
+    "background2": "background2shading",
+    "background3": "background3shading",
+    "background4": "background4shading",
+    "background5": "background5shading",
+    "hillbody": "background5shading",
+    "hillbackground": "background5shading"
+  }
+}

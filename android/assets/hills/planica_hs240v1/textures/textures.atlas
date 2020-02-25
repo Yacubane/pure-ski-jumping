@@ -1,0 +1,111 @@
+
+textures.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg1landscape1
+  rotate: false
+  xy: 96, 425
+  size: 368, 164
+  orig: 368, 164
+  offset: 0, 0
+  index: -1
+bg1landscape2
+  rotate: false
+  xy: 2, 753
+  size: 527, 235
+  orig: 527, 235
+  offset: 0, 0
+  index: -1
+bg1landscape3
+  rotate: false
+  xy: 96, 2
+  size: 254, 163
+  orig: 254, 163
+  offset: 0, 0
+  index: -1
+bg1landscape4
+  rotate: false
+  xy: 531, 671
+  size: 258, 147
+  orig: 258, 147
+  offset: 0, 0
+  index: -1
+bg2landscape1
+  rotate: false
+  xy: 2, 591
+  size: 511, 160
+  orig: 511, 160
+  offset: 0, 0
+  index: -1
+bg2landscape2
+  rotate: false
+  xy: 531, 820
+  size: 463, 168
+  orig: 463, 168
+  offset: 0, 0
+  index: -1
+lamp
+  rotate: false
+  xy: 2, 15
+  size: 92, 574
+  orig: 92, 574
+  offset: 0, 0
+  index: -1
+lamp_light
+  rotate: false
+  xy: 352, 37
+  size: 114, 81
+  orig: 114, 81
+  offset: 0, 0
+  index: -1
+light_flare
+  rotate: false
+  xy: 96, 167
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+start-gate-bg
+  rotate: false
+  xy: 913, 584
+  size: 105, 234
+  orig: 105, 234
+  offset: 0, 0
+  index: -1
+start-gate-fg
+  rotate: false
+  xy: 515, 494
+  size: 81, 175
+  orig: 81, 175
+  offset: 0, 0
+  index: -1
+sun
+  rotate: false
+  xy: 681, 605
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+tree1
+  rotate: false
+  xy: 598, 494
+  size: 81, 175
+  orig: 81, 175
+  offset: 0, 0
+  index: -1
+tree2
+  rotate: false
+  xy: 354, 120
+  size: 131, 303
+  orig: 131, 303
+  offset: 0, 0
+  index: -1
+tree3
+  rotate: false
+  xy: 791, 573
+  size: 120, 245
+  orig: 120, 245
+  offset: 0, 0
+  index: -1

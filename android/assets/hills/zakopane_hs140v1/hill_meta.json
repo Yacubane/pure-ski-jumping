@@ -1,0 +1,54 @@
+{
+    "id": "cyfrogen.psjhill.zakopane_hs140v1",
+    "name": "Zakopane",
+    "versionName": "1",
+    "version": 1,
+    "author": "Cyfrogen",
+    "description": "",
+    "country": "Poland",
+    "place": "Zakopane",
+    "icon": "icon.png",
+    "constructionPoint": 120,
+    "hillSize": 140,
+    "noOfStartGates": 31,
+    "defaultStartGate": 21,
+    "defaultCompetitiveStartGate": 21,
+    "defaultMode": "MORNING",
+    "defaultCompetitiveMode": "MORNING",
+    "defaultSnowing": "NO",
+    "defaultCompetitiveSnowing": "NO",
+    "physics": {
+        "kineticFrictionCoefficient": 0.01,
+        "maxWind": 2.0,
+        "minWind": -2.0,
+        "defaultCompetitiveWind": 1.0,
+        "defaultMinWind": -2.0,
+        "defaultMaxWind": 2.0,
+        "windMultiplier": 0.05,
+        "k1": 0.001,
+        "delta0": 50,
+        "tau": 0.32,
+        "k2base": 0.5,
+        "k2maxDegradation": 0.4,
+        "takeoffVelocity": 2.8,
+        "takeoffVelocityPerpendicular": true,
+        "performanceFunction": {
+            "type": "power",
+            "power": 6.0
+        }
+    },
+    "modes": {
+        "MORNING": {
+            "modeData": "modes/mode_morning.json",
+            "hillModelData": "hill_model.json"
+        },
+        "DAY": {
+            "modeData": "modes/mode_day.json",
+            "hillModelData": "hill_model.json"
+        },
+        "NIGHT": {
+            "modeData": "modes/mode_night.json",
+            "hillModelData": "hill_model.json"
+        }
+    }
+}

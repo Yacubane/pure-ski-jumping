@@ -1,0 +1,230 @@
+
+atlas.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+about
+  rotate: false
+  xy: 1462, 468
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+accept_icon
+  rotate: false
+  xy: 109, 17
+  size: 104, 104
+  orig: 104, 104
+  offset: 0, 0
+  index: -1
+add_icon
+  rotate: false
+  xy: 2, 16
+  size: 105, 105
+  orig: 105, 105
+  offset: 0, 0
+  index: -1
+arrow_down
+  rotate: false
+  xy: 1291, 2
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+arrow_up
+  rotate: false
+  xy: 785, 28
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+back
+  rotate: false
+  xy: 1291, 192
+  size: 105, 105
+  orig: 105, 105
+  offset: 0, 0
+  index: -1
+background
+  rotate: false
+  xy: 2, 381
+  size: 1200, 600
+  orig: 1200, 600
+  offset: 0, 0
+  index: -1
+checked_checkbox
+  rotate: false
+  xy: 1386, 97
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+competitors
+  rotate: false
+  xy: 776, 123
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+cpu_player_icon
+  rotate: false
+  xy: 1291, 97
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+cpu_player_icon_unchecked
+  rotate: false
+  xy: 1481, 116
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+delete_icon
+  rotate: false
+  xy: 690, 28
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+dev_notes
+  rotate: false
+  xy: 1204, 299
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+edit_icon
+  rotate: false
+  xy: 215, 28
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+exit
+  rotate: false
+  xy: 260, 123
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+go_for_record
+  rotate: false
+  xy: 1034, 42
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+help
+  rotate: false
+  xy: 2, 123
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+hill_zakopane
+  rotate: false
+  xy: 1204, 556
+  size: 256, 425
+  orig: 256, 425
+  offset: 0, 0
+  index: -1
+hills
+  rotate: false
+  xy: 1462, 725
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+leaderboards
+  rotate: false
+  xy: 1461, 211
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+normal_player_icon
+  rotate: false
+  xy: 310, 28
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+normal_player_icon_unchecked
+  rotate: false
+  xy: 500, 28
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+online
+  rotate: false
+  xy: 518, 123
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+snowing_hard_icon
+  rotate: false
+  xy: 880, 28
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+snowing_no_icon
+  rotate: false
+  xy: 1481, 21
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+snowing_soft_icon
+  rotate: false
+  xy: 595, 28
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+solo
+  rotate: false
+  xy: 1718, 211
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+start
+  rotate: false
+  xy: 1720, 725
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+tutorial
+  rotate: false
+  xy: 1719, 468
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+weather_day_icon
+  rotate: false
+  xy: 405, 28
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+weather_morning_icon
+  rotate: false
+  xy: 1576, 116
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+weather_night_icon
+  rotate: false
+  xy: 1386, 2
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1

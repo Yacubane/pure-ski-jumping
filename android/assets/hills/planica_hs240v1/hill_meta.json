@@ -1,0 +1,46 @@
+{
+    "id": "cyfrogen.psjhill.planica_hs240v1",
+    "name": "Planica",
+    "versionName": "1",
+    "version": 1,
+    "author": "Cyfrogen",
+    "description": "",
+    "country": "Slovenia",
+    "place": "Planica",
+    "icon": "icon.png",
+    "constructionPoint": 200,
+    "hillSize": 240,
+    "noOfStartGates": 50,
+    "defaultStartGate": 14,
+    "defaultCompetitiveStartGate": 8,
+    "defaultMode": "DAY",
+    "defaultCompetitiveMode": "DAY",
+    "defaultSnowing": "NO",
+    "defaultCompetitiveSnowing": "NO",
+    "physics": {
+        "kineticFrictionCoefficient": 0.08,
+        "maxWind": 2.0,
+        "minWind": -1.0,
+        "defaultCompetitiveWind": 1.0,
+        "defaultMinWind": -1.0,
+        "defaultMaxWind": 2.0,
+        "windMultiplier": 0.025,
+        "k1": 0.001,
+        "delta0": 62,
+        "tau": 0.32,
+        "k2base": 0.375,
+        "k2maxDegradation": 0.22,
+        "takeoffVelocity": 2.8,
+        "takeoffVelocityPerpendicular": true,
+        "performanceFunction": {
+            "type": "power",
+            "power": 4.0
+        }
+    },
+    "modes": {
+        "DAY": {
+            "modeData": "modes/mode_day.json",
+            "hillModelData": "hill_model.json"
+        }
+    }
+}
