@@ -53,8 +53,8 @@ android {
         applicationId "pl.cyfrogen.pureskijumping"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 11
-        versionName "1.1.1-alpha"
+        versionCode 12
+        versionName "1.1.2-alpha"
     }
 
     flavorDimensions "type"
