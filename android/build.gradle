@@ -24,6 +24,14 @@ android {
             assets.srcDirs = ['assets']
             jniLibs.srcDirs = ['libs']
         }
+        free {
+            manifest.srcFile 'AndroidManifest-free.xml'
+            java.srcDirs = ['src-free']
+        }
+        nonFree {
+            manifest.srcFile 'AndroidManifest-nonfree.xml'
+            java.srcDirs = ['src-nonfree']
+        }
 
     }
     packagingOptions {
@@ -48,6 +56,13 @@ android {
         versionCode 11
         versionName "1.1.1-alpha"
     }
+
+    flavorDimensions "type"
+    productFlavors {
+        free { dimension "type" }
+        nonFree { dimension "type" }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -74,12 +89,13 @@ dependencies {
     natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-arm64-v8a"
     natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86"
     natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86_64"
-    implementation "com.google.android.gms:play-services-games:19.0.0"
-    implementation 'com.google.android.gms:play-services-auth:17.0.0'
-    implementation 'com.google.firebase:firebase-analytics:17.2.2'
-    implementation 'com.google.firebase:firebase-core:17.2.2'
-    implementation 'com.google.firebase:firebase-messaging:20.1.0'
-    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
+    nonFreeImplementation "com.google.android.gms:play-services-games:19.0.0"
+    nonFreeImplementation 'com.google.android.gms:play-services-auth:17.0.0'
+    nonFreeImplementation 'com.google.firebase:firebase-analytics:17.2.2'
+    nonFreeImplementation 'com.google.firebase:firebase-core:17.2.2'
+    nonFreeImplementation 'com.google.firebase:firebase-messaging:20.1.0'
+    nonFreeImplementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
 }
 
 apply plugin: 'com.google.gms.google-services'

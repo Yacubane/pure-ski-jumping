@@ -9,6 +9,8 @@ public interface PlatformAPI {
     void showLeaderboard(String scoreboard, LeaderboardListener listener);
     void sendLoggingEvent(String id, Map<String, String> values);
 
+    boolean areLeaderboardsSupported();
+
     void logCrash(Exception e);
     void logCrashMessage(String s);
     void logCrashString(String key, String value);

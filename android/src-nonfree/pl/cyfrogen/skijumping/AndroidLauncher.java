@@ -163,6 +163,11 @@ public class AndroidLauncher extends AndroidApplication implements PlatformAPI {
     }
 
     @Override
+    public boolean areLeaderboardsSupported() {
+        return true;
+    }
+
+    @Override
     public void logCrash(Exception e) {
         Crashlytics.logException(e);
     }

@@ -102,17 +102,23 @@ public class MainMenuStage extends MenuStage {
         button2.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                hide();
+                if (Main.getInstance().getPlatformAPI().areLeaderboardsSupported()) {
+                    hide();
 
-                MainMenuUtils.showStage(
-                        mainMenuController,
-                        new OnlineStage(getMenuController())
-                                .withOnReturnListener(new OnReturnListener() {
-                                    @Override
-                                    public void returned(MenuStage menuStage) {
-                                        show(Direction.RIGHT);
-                                    }
-                                }));
+                    MainMenuUtils.showStage(
+                            mainMenuController,
+                            new OnlineStage(getMenuController())
+                                    .withOnReturnListener(new OnReturnListener() {
+                                        @Override
+                                        public void returned(MenuStage menuStage) {
+                                            show(Direction.RIGHT);
+                                        }
+                                    }));
+                } else {
+                    new InfoDialog(MainMenuStage.this, "Error", 0.04f,
+                            "Leaderboards are not available in FLOSS version of game (without Google Play Services).")
+                            .show();
+                }
             }
         });
 
@@ -155,7 +161,7 @@ public class MainMenuStage extends MenuStage {
 
         boolean bannerActive = false;
 
-        if(bannerActive) {
+        if (bannerActive) {
             scrollPane.setY(scrollPane.getY() + BOTTOM_TEXT_SIZE + BUTTON_TEXT_PADDING);
             String slideTextValue =
                     "We know that you want more hills, but we have a lot of work at the moment during studies and not only. We will work on this game in February and you can expect new hill in mid/end of February. You will get notification on your phone when new hill is ready! Thank for your support, understanding and patience! Cyfrogen.";
@@ -166,8 +172,6 @@ public class MainMenuStage extends MenuStage {
         }
 
         animateShowing(Direction.LEFT);
-
-
 
 
     }
