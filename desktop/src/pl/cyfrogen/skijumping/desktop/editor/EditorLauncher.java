@@ -1,7 +1,7 @@
 package pl.cyfrogen.skijumping.desktop.editor;
 
-import com.badlogic.gdx.backends.lwjgl.LwjglAWTCanvas;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -47,10 +47,8 @@ public class EditorLauncher extends JFrame implements Editor {
         final Container container = getContentPane();
         container.setLayout(new BorderLayout());
 
-        LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-        config.width = 1000;
-        config.height = 500;
-        config.vSyncEnabled = false;
+        Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
+        config.setWindowedMode(1000, 500);
 
         Main main = new Main(new PlatformAPI() {
             @Override
@@ -79,6 +77,11 @@ public class EditorLauncher extends JFrame implements Editor {
             }
 
             @Override
+            public boolean areLeaderboardsSupported() {
+                return false;
+            }
+
+            @Override
             public void logCrash(Exception e) {
 
             }
@@ -95,12 +98,12 @@ public class EditorLauncher extends JFrame implements Editor {
         });
         main.attachEditor(this);
 
-        LwjglAWTCanvas canvas = new LwjglAWTCanvas(main, config);
-        container.add(canvas.getCanvas(), BorderLayout.CENTER);
+        Lwjgl3Application canvas = new Lwjgl3Application(main, config);
+        //container.add(canvas.getCanvas(), BorderLayout.CENTER);
 
         pack();
         setVisible(true);
-        setSize(config.width, config.height);
+        //setSize(config.width, config.height);
 
         JDialog dialog = new JDialog(this, "dialog Box");
 

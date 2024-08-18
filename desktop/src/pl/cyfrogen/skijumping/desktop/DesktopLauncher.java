@@ -1,7 +1,9 @@
 package pl.cyfrogen.skijumping.desktop;
 
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+
+import com.badlogic.gdx.Graphics;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -38,18 +40,12 @@ public class DesktopLauncher {
 
 		resChooserPanel.add(resChooser);
 
-		JPanel fullscreenPanel = new JPanel();
-		final JCheckBox fullscreen = new JCheckBox();
-		fullscreen.setText("Fullscreen");
-		fullscreenPanel.add(fullscreen);
-
 		JPanel panel2 = new JPanel();
 		JButton start = new JButton();
 		start.setText("start");
 		panel2.add(start);
 
 		mainPanel.add(resChooserPanel);
-		mainPanel.add(fullscreenPanel);
 		mainPanel.add(panel2);
 
 		frame.add(mainPanel);
@@ -65,14 +61,15 @@ public class DesktopLauncher {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
-				LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-				config.width = resolutions.get(resChooser.getSelectedIndex()).width;
-				config.height = resolutions.get(resChooser.getSelectedIndex()).height;
-				config.resizable = false;
-				config.title = "Pure Ski Jumping";
-				config.fullscreen = fullscreen.isSelected();
+				Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
+				config.setWindowedMode(
+						resolutions.get(resChooser.getSelectedIndex()).width,
+						resolutions.get(resChooser.getSelectedIndex()).height
+				);
+				config.setResizable(false);
+				config.setTitle("Pure Ski Jumping");
 
-				new LwjglApplication(new Main(new PlatformAPI() {
+				new Lwjgl3Application(new Main(new PlatformAPI() {
 					@Override
 					public boolean isSignedIn() {
 						return true;
@@ -96,6 +93,11 @@ public class DesktopLauncher {
 					@Override
 					public void sendLoggingEvent(String id, Map<String, String> values) {
 
+					}
+
+					@Override
+					public boolean areLeaderboardsSupported() {
+						return false;
 					}
 
 					@Override

@@ -1,230 +1,70 @@
-
 atlas.png
-size: 2048,1024
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
+size:2048,2048
+filter:Linear,Linear
+repeat:none
 about
-  rotate: false
-  xy: 1462, 468
-  size: 255, 255
-  orig: 255, 255
-  offset: 0, 0
-  index: -1
+bounds:518,1147,255,255
 accept_icon
-  rotate: false
-  xy: 109, 17
-  size: 104, 104
-  orig: 104, 104
-  offset: 0, 0
-  index: -1
+bounds:1032,1298,104,104
 add_icon
-  rotate: false
-  xy: 2, 16
-  size: 105, 105
-  orig: 105, 105
-  offset: 0, 0
-  index: -1
+bounds:260,525,105,105
 arrow_down
-  rotate: false
-  xy: 1291, 2
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:260,430,93,93
 arrow_up
-  rotate: false
-  xy: 785, 28
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:1032,1108,93,93
 back
-  rotate: false
-  xy: 1291, 192
-  size: 105, 105
-  orig: 105, 105
-  offset: 0, 0
-  index: -1
+bounds:2,97,105,105
 background
-  rotate: false
-  xy: 2, 381
-  size: 1200, 600
-  orig: 1200, 600
-  offset: 0, 0
-  index: -1
+bounds:2,1404,1200,600
 checked_checkbox
-  rotate: false
-  xy: 1386, 97
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:1032,1203,93,93
 competitors
-  rotate: false
-  xy: 776, 123
-  size: 256, 256
-  orig: 256, 256
-  offset: 0, 0
-  index: -1
+bounds:1204,1490,256,256
 cpu_player_icon
-  rotate: false
-  xy: 1291, 97
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:1204,1395,93,93
 cpu_player_icon_unchecked
-  rotate: false
-  xy: 1481, 116
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:259,240,93,93
 delete_icon
-  rotate: false
-  xy: 690, 28
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:1584,1396,93,93
 dev_notes
-  rotate: false
-  xy: 1204, 299
-  size: 255, 255
-  orig: 255, 255
-  offset: 0, 0
-  index: -1
+bounds:2,204,255,255
 edit_icon
-  rotate: false
-  xy: 215, 28
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:1299,1395,93,93
 exit
-  rotate: false
-  xy: 260, 123
-  size: 256, 256
-  orig: 256, 256
-  offset: 0, 0
-  index: -1
+bounds:2,461,256,256
 go_for_record
-  rotate: false
-  xy: 1034, 42
-  size: 255, 255
-  orig: 255, 255
-  offset: 0, 0
-  index: -1
+bounds:260,632,255,255
 help
-  rotate: false
-  xy: 2, 123
-  size: 256, 256
-  orig: 256, 256
-  offset: 0, 0
-  index: -1
+bounds:1462,1748,256,256
 hill_zakopane
-  rotate: false
-  xy: 1204, 556
-  size: 256, 425
-  orig: 256, 425
-  offset: 0, 0
-  index: -1
+bounds:2,977,256,425
 hills
-  rotate: false
-  xy: 1462, 725
-  size: 256, 256
-  orig: 256, 256
-  offset: 0, 0
-  index: -1
+bounds:2,719,256,256
 leaderboards
-  rotate: false
-  xy: 1461, 211
-  size: 255, 255
-  orig: 255, 255
-  offset: 0, 0
-  index: -1
+bounds:260,889,255,255
 normal_player_icon
-  rotate: false
-  xy: 310, 28
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:1394,1395,93,93
 normal_player_icon_unchecked
-  rotate: false
-  xy: 500, 28
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:259,335,93,93
 online
-  rotate: false
-  xy: 518, 123
-  size: 256, 256
-  orig: 256, 256
-  offset: 0, 0
-  index: -1
+bounds:260,1146,256,256
+privacy_policy
+bounds:1720,1749,255,255
 snowing_hard_icon
-  rotate: false
-  xy: 880, 28
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:2,2,93,93
 snowing_no_icon
-  rotate: false
-  xy: 1481, 21
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:367,537,93,93
 snowing_soft_icon
-  rotate: false
-  xy: 595, 28
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:109,109,93,93
 solo
-  rotate: false
-  xy: 1718, 211
-  size: 255, 255
-  orig: 255, 255
-  offset: 0, 0
-  index: -1
+bounds:775,1147,255,255
 start
-  rotate: false
-  xy: 1720, 725
-  size: 256, 256
-  orig: 256, 256
-  offset: 0, 0
-  index: -1
+bounds:1204,1748,256,256
 tutorial
-  rotate: false
-  xy: 1719, 468
-  size: 255, 255
-  orig: 255, 255
-  offset: 0, 0
-  index: -1
+bounds:1462,1491,255,255
 weather_day_icon
-  rotate: false
-  xy: 405, 28
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:462,537,93,93
 weather_morning_icon
-  rotate: false
-  xy: 1576, 116
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:1489,1396,93,93
 weather_night_icon
-  rotate: false
-  xy: 1386, 2
-  size: 93, 93
-  orig: 93, 93
-  offset: 0, 0
-  index: -1
+bounds:204,109,93,93

@@ -53,6 +53,7 @@ public class MenuAssets {
         TUTORIAL,
         GO_FOR_RECORD,
         DEV_NOTE,
+        PRIVACY_POLICY,
         ABOUT,
 
         MENU_THEME,
@@ -81,6 +82,7 @@ public class MenuAssets {
         map.put(Asset.TUTORIAL, mainAtlas.findRegion("tutorial"));
         map.put(Asset.GO_FOR_RECORD, mainAtlas.findRegion("go_for_record"));
         map.put(Asset.DEV_NOTE, mainAtlas.findRegion("dev_notes"));
+        map.put(Asset.PRIVACY_POLICY, mainAtlas.findRegion("privacy_policy"));
         map.put(Asset.ABOUT, mainAtlas.findRegion("about"));
 
 

@@ -76,7 +76,7 @@ public class MainMenuController extends Stage {
     }
 
     public void showNextMenuStage(Stage stage) {
-        if(backgroundStage != null) {
+        if (backgroundStage != null) {
             backgroundStage.dispose();
         }
         backgroundStage = foregroundStage;
@@ -113,8 +113,8 @@ public class MainMenuController extends Stage {
     }
 
     @Override
-    public boolean scrolled(int amount) {
-        return foregroundStage.scrolled(amount);
+    public boolean scrolled(float amountX, float amountY) {
+        return foregroundStage.scrolled(amountX, amountY);
     }
 
     public void reshow() {

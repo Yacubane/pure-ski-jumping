@@ -526,9 +526,9 @@ public class WorldCupGameStage extends Stage {
     }
 
     @Override
-    public boolean scrolled(int amount) {
-        boolean handled = super.scrolled(amount);
-        if (!handled && passInputToWorld) world.scrolled(amount);
+    public boolean scrolled(float amountX, float amountY) {
+        boolean handled = super.scrolled(amountX, amountY);
+        if (!handled && passInputToWorld) world.scrolled((int) amountY);
         return handled;
     }
 

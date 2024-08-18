@@ -1,5 +1,6 @@
 package pl.cyfrogen.skijumping.gui.stage;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -35,7 +36,8 @@ public class HelpStage extends MenuStage {
         super(mainMenuController);
 
         TextureRegion soloTextureRegion = getMenuAssets().get(MenuAssets.Asset.TUTORIAL, TextureRegion.class);
-        TextureRegion leaderboardsTextureRegion = getMenuAssets().get(MenuAssets.Asset.DEV_NOTE, TextureRegion.class);
+        TextureRegion developersNoteTextureRegion = getMenuAssets().get(MenuAssets.Asset.DEV_NOTE, TextureRegion.class);
+        TextureRegion privacyPolicyTextureRegion = getMenuAssets().get(MenuAssets.Asset.PRIVACY_POLICY, TextureRegion.class);
         TextureRegion aboutTextureRegion = getMenuAssets().get(MenuAssets.Asset.ABOUT, TextureRegion.class);
 
         MenuButton tutorialButton = new MenuButton(soloTextureRegion);
@@ -52,7 +54,7 @@ public class HelpStage extends MenuStage {
         });
 
 
-        MenuButton developersNoteButton = new MenuButton(leaderboardsTextureRegion);
+        MenuButton developersNoteButton = new MenuButton(developersNoteTextureRegion);
         developersNoteButton.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
@@ -62,6 +64,14 @@ public class HelpStage extends MenuStage {
                                 "You liking this game? There is chance for you! - maybe you want to make new hills? Want better online modes? Want PC release? Or maybe you want me to release this game as open-source and contribute to game? I'm open for new ideas, you can always reach me at cyfrogen@gmail.com. " +
                                 "\nI just want to get community voice :) \nBest regards, Jakub Dybczak")
                         .show();
+            }
+        });
+
+        MenuButton privacyPolicyButton = new MenuButton(privacyPolicyTextureRegion);
+        privacyPolicyButton.addListener(new ClickListener() {
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                Gdx.net.openURI("https://cyfrogen.com/privacy/pure-ski-jumping");
             }
         });
 
@@ -82,7 +92,7 @@ public class HelpStage extends MenuStage {
             }
         });
 
-        addTiles(tutorialButton, developersNoteButton, aboutButton);
+        addTiles(tutorialButton, developersNoteButton, privacyPolicyButton, aboutButton);
         addTitlebar("HELP");
         addBackButton();
         animateShowing(Direction.LEFT);
