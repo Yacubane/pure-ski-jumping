@@ -1,10 +1,3 @@
-#ifdef GL_ES
-#define LOWP lowp
-precision mediump float;
-#else
-#define LOWP
-#endif
-
 attribute vec4 a_position;
 attribute vec4 a_color;
 

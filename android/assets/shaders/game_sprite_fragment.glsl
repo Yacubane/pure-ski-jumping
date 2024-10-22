@@ -8,7 +8,6 @@ precision mediump float;
 varying LOWP vec4 v_color;
 varying vec2 v_texCoords;
 uniform sampler2D u_texture;
-uniform mat4 u_projTrans;
 
 uniform vec4 ambient_color;
 uniform int fog_enabled;
